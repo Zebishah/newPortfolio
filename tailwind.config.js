@@ -34,12 +34,15 @@ export const theme = {
       serif: ["Great Vibes", "serif"],
       radios: ["Radio Canada Big", "sans-serif"],
       joining: ["Satisfy", "cursive"],
+      monte: ["Montserrat", "sans-serif"],
+      poppins: ["Poppins", "sans-serif"],
     },
     colors: {
       "light-black": "rgb(20, 20, 19)",
       "fade-black": "rgb(28, 28, 26)",
       greens: "#2fff86",
       yellows: "rgb(229, 255, 0)",
+      blues: "#00e1ff",
     },
     boxShadow: {
       sm: "0 1px 4px 0 rgba(0, 0, 0, 0.08)",

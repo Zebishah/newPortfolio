@@ -5,18 +5,24 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa6";
-import image from "../images/imgonline-com-ua-ReplaceColor-BgXRJRCAzCepcb-removebg-preview.png";
+import image from "../images/imgonline-com-ua-ReplaceColor-BgXRJRCAzCepcb-removebg-preview (2).png";
 import Education from "./Education";
 import Experience from "./Experience";
 import About from "./About";
 import Services from "./Services";
 import Skills from "./Skills";
 import "../index.css";
+import backgroundImage from "../images/3d-dark-grunge-display-background-with-smoky-atmosphere.jpg";
 import { useEffect, useState } from "react";
+import Projects from "./Projects";
+import ContactUs from "./ContactUs";
 const TitlePage = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-y-48">
-      <div className="flex flex-col lg:flex-row mx-auto items-center justify-center w-[90%] h-screen gap-x-10 ">
+    <div className="flex flex-col items-center justify-center gap-y-20">
+      <div
+        className="flex flex-col lg:flex-row mx-auto items-center justify-center w-[100%] h-screen border-none gap-x-10 bg-center bg-cover"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
         <div className="flex flex-col items-start justify-center gap-y-3 w-[90%] lg:w-[40%] order-2 lg:order-1">
           <h1 className="text-6xl font-bold text-white font-radios">
             Hi, It's <span className="text-[#00e1ff]">Eren Yeager</span>{" "}
@@ -24,7 +30,7 @@ const TitlePage = () => {
           <h3 className="flex text-4xl text-white gap-x-3 font-radios">
             I&apos;m a{"  "}
             <span
-              className={`flex text-[#00e1ff] font-sans font-bold transition-all duration-300 ease-in-out `}
+              className={`flex text-[#00e1ff] font-poppins font-bold transition-all duration-300 ease-in-out `}
             >
               <Typewriter
                 options={{
@@ -91,6 +97,8 @@ const TitlePage = () => {
       <Experience />
       <Services />
       <Skills />
+      <Projects />
+      <ContactUs />
     </div>
   );
 };

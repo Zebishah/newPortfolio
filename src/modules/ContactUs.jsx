@@ -2,10 +2,11 @@ import backgroundImage from "../images/27230.jpg";
 const ContactUs = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center w-full h-full p-0 mx-auto space-y-16 bg-center bg-cover md:p-16"
+      className="flex flex-col items-center justify-center w-full h-full p-0 mx-auto space-y-16 bg-center bg-cover md:p-16 "
+      id="contact"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <h1 className="text-6xl font-semibold text-[#00e1ff] font-radios mt-12">
+      <h1 className="text-3xl lg:text-6xl font-semibold text-[#00e1ff] font-radios mt-12">
         <span className="text-white ">Contact</span> Me
       </h1>
       <section className="py-24">

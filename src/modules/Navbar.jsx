@@ -1,87 +1,192 @@
 import { Link } from "react-router-dom";
-import image from "../images/zohaib_Haider__1_-removebg-preview.png";
-import { FaBars, FaCode, FaCross } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { ImCross } from "react-icons/im";
 import { useState } from "react";
-import { MdCancel } from "react-icons/md";
-const Navbar = () => {
-  const [menu, setMenu] = useState(false);
+import { FaCode } from "react-icons/fa";
 
-  const openMenu = () => {
-    setMenu(true);
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
-  const closeMenu = () => {
-    setMenu(false);
+  const scrollToHome = () => {
+    const contactSection = document.getElementById("home");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
+  const scrollToAbout = () => {
+    const contactSection = document.getElementById("about");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollToEducation = () => {
+    const contactSection = document.getElementById("education");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollToServices = () => {
+    const contactSection = document.getElementById("services");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollToSkills = () => {
+    const contactSection = document.getElementById("skills");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const scrollToProject = () => {
+    const contactSection = document.getElementById("projects");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="flex flex-row items-center justify-between w-full p-4 bg-light-black">
-      <div
-        className={`flex gap-x-3 items-center justify-center h-16 ${
-          !menu ? "w-[20%]" : "w-0 "
-        }`}
-      >
-        <FaCode size={35} className="text-blues" />
-        <h1 className="text-2xl font-bold text-blues font-poppins">Zohaib</h1>
+    <>
+      <div className="flex flex-col " id="home">
+        <div className="flex flex-row justify-between items-center h-[10vh] bg-light-black px-10">
+          <div className="flex items-center justify-center py-2 pr-6 gap-x-2">
+            <FaCode size={40} className="text-cyan-400" />
+            <h1 className="text-3xl text-white font-radios">
+              <span className="text-4xl font-bold tracking-widest text-cyan-300 ">
+                Z
+              </span>
+              OHAIB
+            </h1>
+          </div>
+          <div className="flex items-center justify-center gap-x-10 ">
+            <div className="items-center justify-center hidden md:flex">
+              {" "}
+              <Link
+                onClick={scrollToHome}
+                className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+              >
+                Home
+              </Link>
+              <Link
+                className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+                onClick={scrollToAbout}
+              >
+                About
+              </Link>
+              <Link
+                className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+                onClick={scrollToEducation}
+              >
+                Experience
+              </Link>
+              <Link
+                className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+                onClick={scrollToServices}
+              >
+                Services
+              </Link>
+              <Link
+                className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+                onClick={scrollToSkills}
+              >
+                Skills
+              </Link>
+              <Link
+                className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+                onClick={scrollToProject}
+              >
+                Projects
+              </Link>
+              <Link
+                className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+                onClick={scrollToContact}
+              >
+                Contact
+              </Link>
+            </div>
+            {open ? (
+              <ImCross
+                size={30}
+                className="text-cyan-300 md:hidden"
+                onClick={() => {
+                  setOpen(false);
+                }}
+              />
+            ) : (
+              <GiHamburgerMenu
+                size={30}
+                className="text-cyan-300 md:hidden"
+                onClick={() => {
+                  setOpen(true);
+                }}
+              />
+            )}
+          </div>
+        </div>
       </div>
       <div
-        className={`w-[100%] xl:w-[70%] ${
-          menu === true
-            ? "flex opacity-100 visible"
-            : "flex w-0 h-0 opacity-0 invisible"
-        }hidden xl:opacity-100 xl:flex flex-col transition-all duration-300 items-center justify-center shadow-lg xl:mx-28 xl:flex-row xl:bg-light-black bg-fade-black shadow-blues xl:shadow-none 2xl:gap-x-12 gap-x-6`}
+        id="hs-offcanvas-example"
+        className={`flex flex-col justify-start items-start gap-y-8 hs-overlay [--auto-close:lg] hs-overlay-open:translate-x-0 fixed top-0 start-0 bottom-0 p-4 z-[60] w-64 bg-white border-e border-gray-200 pt-7 pb-10 overflow-y-auto transition-transform duration-500 ease-in-out transform ${
+          open ? "translate-x-0" : "-translate-x-full"
+        } block end-auto bottom-0
+  [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500 dark:bg-neutral-800 dark:border-neutral-700`}
       >
-        <MdCancel
-          onClick={closeMenu}
-          className={`flex ${
-            menu === true ? "flex" : "hidden"
-          } xl:hidden text-2xl left-[47%] top-3 text-white font-radios hover:text-[#00e1ff] relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#00e1ff] after:w-full after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left transition-all duration-500 ease-in-out cursor-pointer`}
+        <div className="flex items-center justify-center py-2 mx-auto">
+          <h1 className="text-3xl text-white font-radios">
+            <span className="text-4xl font-extrabold tracking-widest text-cyan-300 ">
+              Z
+            </span>
+            OHAIB
+          </h1>
+        </div>
+        <Link
+          onClick={scrollToHome}
+          className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+        >
+          Home
+        </Link>
+        <Link
+          className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+          onClick={scrollToAbout}
+        >
+          About
+        </Link>
+        <Link
+          className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+          onClick={scrollToEducation}
+        >
+          Experience
+        </Link>
+        <Link
+          className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+          onClick={scrollToServices}
+        >
+          Services
+        </Link>
+        <Link
+          className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+          onClick={scrollToSkills}
+        >
+          Skills
+        </Link>
+        <Link
+          className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+          onClick={scrollToProject}
+        >
+          Projects
+        </Link>
+        <Link
+          className="px-6 py-2 text-sm lg:text-[16px] text-white font-radios"
+          onClick={scrollToContact}
         >
           Contact
-        </MdCancel>
-        <Link>
-          <p className="py-1 text-lg text-white font-radios hover:text-[#00e1ff] relative inline-block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#00e1ff] after:w-full after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left transition-all duration-500 ease-in-out cursor-pointer">
-            Home
-          </p>
-        </Link>
-        <Link>
-          <p className="py-1 text-lg text-white font-radios hover:text-[#00e1ff] relative inline-block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#00e1ff] after:w-full after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left transition-all duration-500 ease-in-out cursor-pointer">
-            About
-          </p>
-        </Link>
-        <Link>
-          <p className="py-1 text-lg text-white font-radios hover:text-[#00e1ff] relative inline-block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#00e1ff] after:w-full after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left transition-all duration-500 ease-in-out cursor-pointer">
-            Services
-          </p>
-        </Link>
-        <Link>
-          <p className="py-1 text-lg text-white font-radios hover:text-[#00e1ff] relative inline-block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#00e1ff] after:w-full after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left transition-all duration-500 ease-in-out cursor-pointer">
-            Skills
-          </p>
-        </Link>
-        <Link>
-          <p className="py-1 text-lg text-white font-radios hover:text-[#00e1ff] relative inline-block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#00e1ff] after:w-full after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left transition-all duration-500 ease-in-out cursor-pointer">
-            Projects
-          </p>
-        </Link>
-        <Link>
-          <p className="py-1 text-lg text-white font-radios hover:text-[#00e1ff] relative inline-block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#00e1ff] after:w-full after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left transition-all duration-500 ease-in-out cursor-pointer">
-            Resume
-          </p>
-        </Link>
-        <Link>
-          <p className="py-1 text-lg text-white font-radios hover:text-[#00e1ff] relative inline-block after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#00e1ff] after:w-full after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left transition-all duration-500 ease-in-out cursor-pointer">
-            Contact
-          </p>
         </Link>
       </div>
-      <FaBars
-        onClick={openMenu}
-        className={`flex ${
-          menu === true ? "hidden" : "flex"
-        } xl:hidden text-lg text-white font-radios hover:text-[#00e1ff] relative after:block after:content-[''] after:absolute after:h-[3px] after:bg-[#00e1ff] after:w-full after:left-0 after:bottom-0 after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-left transition-all duration-500 ease-in-out cursor-pointer`}
-      >
-        Contact
-      </FaBars>
-    </div>
+    </>
   );
 };
 

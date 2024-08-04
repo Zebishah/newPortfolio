@@ -23,9 +23,10 @@ const Skills = () => {
   return (
     <div
       className="flex flex-col items-center justify-center w-full h-auto py-12 bg-center bg-cover gap-y-16"
+      id="skills"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <h1 className="text-6xl font-semibold text-blues font-radios">
+      <h1 className="text-4xl font-semibold lg:text-6xl text-blues font-radios">
         <span className="text-white ">My</span> SKills
       </h1>
 

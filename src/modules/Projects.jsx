@@ -3,28 +3,29 @@ import epic from "../img/Screenshot epic.png";
 import travel from "../img/Screenshot travelo.png";
 import weather from "../img/Screenshot weather.png";
 import backgroundImage from "../images/27230.jpg";
-import news from "../img/Screenshot news.png";
-import notes from "../img/Screenshot notes.png";
+import news from "../img/Screenshot ranchers.png";
+import notes from "../img/Screenshot notiaa.png";
 import admin from "../img/Screenshot admin.png";
 import { FaGlobe } from "react-icons/fa";
 
-import { FaGit, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 const Projects = () => {
   return (
     <div
       className="flex flex-col items-center justify-center w-full h-full p-0 mx-auto space-y-16 bg-center bg-cover md:p-16"
+      id="projects"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <h1 className="text-6xl font-semibold text-[#00e1ff] font-radios mt-12">
+      <h1 className="text-3xl lg:text-6xl font-semibold text-[#00e1ff] font-radios mt-12">
         <span className="text-white ">My</span> Projects
       </h1>
       <div className="flex flex-col w-[85%] flex-wrap gap-y-11  ">
-        <div className=" bg-[#1a1919] flex flex-row bg-cover bg-center w-full rounded-xl overflow-hidden mx-auto font-[sans-serif] shadow-lg shadow-[#74f6ff] p-5 transition-all duration-300 ease-in-out cursor-pointer  ">
+        <div className=" bg-[#1a1919] gap-y-5 flex flex-col lg:flex-row bg-cover bg-center w-full rounded-xl overflow-hidden mx-auto font-[sans-serif] shadow-lg shadow-[#74f6ff] p-5 transition-all duration-300 ease-in-out cursor-pointer  ">
           <Link href="#">
             <img
               alt="...."
               src={travel}
-              className="w-[90%] h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
+              className="w-[100%] lg:w-[90%]object-cover h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
             />
           </Link>
           <div className="w-[80%]">
@@ -57,15 +58,15 @@ const Projects = () => {
             </div>
             <div className="flex gap-x-3 ">
               <Link
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-cyan-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                to={"https://travelo-zeta.vercel.app/"}
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white transition-all duration-300 ease-in-out rounded-lg bg-cyan-400 hover:bg-cyan-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-cyan-600"
               >
                 View Website
                 <FaGlobe size={25} className="ml-2 text-white" />
               </Link>
               <Link
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                to={"https://github.com/Zebishah/travelo.git"}
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white transition-all duration-300 ease-in-out bg-blue-700 rounded-lg hover:bg-cyan-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-cyan-600"
               >
                 View Github
                 <FaGithub size={25} className="ml-2 text-white" />
@@ -74,12 +75,12 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className=" bg-[#1a1919] flex flex-row bg-cover bg-center w-full rounded-xl overflow-hidden mx-auto font-[sans-serif] shadow-lg shadow-[#74f6ff] p-5 transition-all duration-300 ease-in-out cursor-pointer  ">
+        <div className=" bg-[#1a1919] gap-y-5 flex flex-col lg:flex-row bg-cover bg-center w-full rounded-xl overflow-hidden mx-auto font-[sans-serif] shadow-lg shadow-[#74f6ff] p-5 transition-all duration-300 ease-in-out cursor-pointer  ">
           <Link href="#">
             <img
               alt="...."
               src={epic}
-              className="w-[90%] h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
+              className="w-[100%] lg:w-[90%]w-[100%] lg:w-[90%] object-cover h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
             />
           </Link>
           <div className="w-[80%]">
@@ -97,7 +98,7 @@ const Projects = () => {
               management and secure transactions.
             </p>
 
-            <div className="flex flex-row mb-4 gap-x-2">
+            <div className="flex flex-row flex-wrap mb-4 gap-y-2 gap-x-2">
               <p className="p-2 text-xs text-white rounded-lg bg-cyan-500 font-radios">
                 Html
               </p>
@@ -128,15 +129,15 @@ const Projects = () => {
             </div>
             <div className="flex gap-x-3 ">
               <Link
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-cyan-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                to={"https://epic-explorer-frontend-f8n1.vercel.app/"}
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white transition-all duration-300 ease-in-out rounded-lg bg-cyan-400 hover:bg-cyan-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-cyan-600"
               >
                 View Website
                 <FaGlobe size={25} className="ml-2 text-white" />
               </Link>
               <Link
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                to={"https://github.com/Zebishah/epic-explorer-tour.git"}
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white transition-all duration-300 ease-in-out bg-blue-700 rounded-lg hover:bg-cyan-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-cyan-600"
               >
                 View Github
                 <FaGithub size={25} className="ml-2 text-white" />
@@ -145,12 +146,12 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className=" bg-[#1a1919] flex flex-row bg-cover bg-center w-full rounded-xl overflow-hidden mx-auto font-[sans-serif] shadow-lg shadow-[#74f6ff] p-5 transition-all duration-300 ease-in-out cursor-pointer  ">
+        <div className=" bg-[#1a1919] gap-y-5 flex flex-col lg:flex-row bg-cover bg-center w-full rounded-xl overflow-hidden mx-auto font-[sans-serif] shadow-lg shadow-[#74f6ff] p-5 transition-all duration-300 ease-in-out cursor-pointer  ">
           <Link href="#">
             <img
               alt="...."
               src={notes}
-              className="w-[90%] h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
+              className="w-[100%] lg:w-[90%]w-[100%] lg:w-[90%] object-cover h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
             />
           </Link>
           <div className="w-[80%]">
@@ -169,7 +170,7 @@ const Projects = () => {
               management capabilities.
             </p>
 
-            <div className="flex flex-row mb-4 gap-x-2">
+            <div className="flex flex-row flex-wrap mb-4 gap-y-2 gap-x-2">
               <p className="p-2 text-xs text-white rounded-lg bg-cyan-500 font-radios">
                 Html
               </p>
@@ -200,15 +201,15 @@ const Projects = () => {
             </div>
             <div className="flex gap-x-3 ">
               <Link
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-cyan-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                to={"https://app-frontend-nine.vercel.app/"}
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white transition-all duration-300 ease-in-out rounded-lg bg-cyan-400 hover:bg-cyan-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-cyan-600"
               >
                 View Website
                 <FaGlobe size={25} className="ml-2 text-white" />
               </Link>
               <Link
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                to={"https://github.com/Zebishah/notia222.git"}
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white transition-all duration-300 ease-in-out bg-blue-700 rounded-lg hover:bg-cyan-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-cyan-600"
               >
                 View Github
                 <FaGithub size={25} className="ml-2 text-white" />
@@ -217,12 +218,12 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className=" bg-[#1a1919] flex flex-row bg-cover bg-center w-full rounded-xl overflow-hidden mx-auto font-[sans-serif] shadow-lg shadow-[#74f6ff] p-5 transition-all duration-300 ease-in-out cursor-pointer  ">
+        <div className=" bg-[#1a1919] gap-y-5 flex flex-col lg:flex-row bg-cover bg-center w-full rounded-xl overflow-hidden mx-auto font-[sans-serif] shadow-lg shadow-[#74f6ff] p-5 transition-all duration-300 ease-in-out cursor-pointer  ">
           <Link href="#">
             <img
               alt="...."
               src={admin}
-              className="w-[90%] h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
+              className="w-[100%] lg:w-[90%]w-[100%] lg:w-[90%] object-cover h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
             />
           </Link>
           <div className="w-[80%]">
@@ -240,7 +241,7 @@ const Projects = () => {
               management.
             </p>
 
-            <div className="flex flex-row mb-4 gap-x-2">
+            <div className="flex flex-row flex-wrap mb-4 gap-y-2 gap-x-2">
               <p className="p-2 text-xs text-white rounded-lg bg-cyan-500 font-radios">
                 Html
               </p>
@@ -268,15 +269,15 @@ const Projects = () => {
             </div>
             <div className="flex gap-x-3 ">
               <Link
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-cyan-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                to={"https://adminpanel-liart.vercel.app/"}
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white transition-all duration-300 ease-in-out rounded-lg bg-cyan-400 hover:bg-cyan-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-cyan-600"
               >
                 View Website
                 <FaGlobe size={25} className="ml-2 text-white" />
               </Link>
               <Link
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                to={"https://github.com/Zebishah/admin-panel-.git"}
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white transition-all duration-300 ease-in-out bg-blue-700 rounded-lg hover:bg-cyan-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-cyan-600"
               >
                 View Github
                 <FaGithub size={25} className="ml-2 text-white" />
@@ -285,26 +286,27 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className=" bg-[#1a1919] flex flex-row bg-cover bg-center w-full rounded-xl overflow-hidden mx-auto font-[sans-serif] shadow-lg shadow-[#74f6ff] p-5 transition-all duration-300 ease-in-out cursor-pointer  ">
+        <div className=" bg-[#1a1919] gap-y-5 flex flex-col lg:flex-row bg-cover bg-center w-full rounded-xl overflow-hidden mx-auto font-[sans-serif] shadow-lg shadow-[#74f6ff] p-5 transition-all duration-300 ease-in-out cursor-pointer  ">
           <Link href="#">
             <img
               alt="...."
               src={news}
-              className="w-[90%] h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
+              className="w-[100%] lg:w-[90%]w-[100%] lg:w-[90%] object-cover h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
             />
           </Link>
           <div className="w-[80%]">
             <Link href="#">
               <h5 className="mb-2 text-2xl font-bold text-cyan-400 font-radios">
-                Epic-News Website (Global news platform)
+                Ranchers Website (Food order platform)
               </h5>
             </Link>
             <p className="mb-3 font-normal text-white font-radios">
-              Developed a dynamic news website with a responsive frontend that
-              fetches real-time data from a news API. Users can browse and read
-              global news across various categories. The site ensures timely and
-              comprehensive news coverage, enhancing user engagement with an
-              intuitive and visually appealing interface.
+              Developed a dynamic food delivery website with a responsive
+              frontend that fetches real-time data from a food delivery API.
+              Users can browse and order from a wide range of restaurants and
+              cuisines. The site ensures timely and efficient food delivery,
+              enhancing user satisfaction with an intuitive and visually
+              appealing interface.
             </p>
 
             <div className="flex flex-row mb-4 gap-x-2">
@@ -321,20 +323,20 @@ const Projects = () => {
                 Javascript
               </p>
               <p className="p-2 text-xs text-white rounded-lg bg-cyan-500 font-radios">
-                News-Api
+                Swiper
               </p>
             </div>
             <div className="flex gap-x-3 ">
               <Link
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-cyan-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                to={"https://food-order-website-iota.vercel.app/"}
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white transition-all duration-300 ease-in-out rounded-lg bg-cyan-400 hover:bg-cyan-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-cyan-600"
               >
                 View Website
                 <FaGlobe size={25} className="ml-2 text-white" />
               </Link>
               <Link
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                to={"https://github.com/Zebishah/food-order-website.git"}
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white transition-all duration-300 ease-in-out bg-blue-700 rounded-lg hover:bg-cyan-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-cyan-600"
               >
                 View Github
                 <FaGithub size={25} className="ml-2 text-white" />
@@ -343,12 +345,12 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className=" bg-[#1a1919] flex flex-row bg-cover bg-center w-full rounded-xl overflow-hidden mx-auto font-[sans-serif] shadow-lg shadow-[#74f6ff] p-5 transition-all duration-300 ease-in-out cursor-pointer  ">
+        <div className=" bg-[#1a1919] gap-y-5 flex flex-col lg:flex-row bg-cover bg-center w-full rounded-xl overflow-hidden mx-auto font-[sans-serif] shadow-lg shadow-[#74f6ff] p-5 transition-all duration-300 ease-in-out cursor-pointer  ">
           <Link href="#">
             <img
               alt="...."
               src={weather}
-              className="w-[90%] h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
+              className="w-[100%] lg:w-[90%]w-[100%] lg:w-[90%] object-cover h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
             />
           </Link>
           <div className="w-[80%]">
@@ -378,20 +380,20 @@ const Projects = () => {
                 Javascript
               </p>
               <p className="p-2 text-xs text-white rounded-lg bg-cyan-500 font-radios">
-                Weather
+                Weather Api
               </p>
             </div>
             <div className="flex gap-x-3 ">
               <Link
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-cyan-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                to={"https://weatherapp-by-zebi.netlify.app/"}
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white transition-all duration-300 ease-in-out rounded-lg bg-cyan-400 hover:bg-cyan-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-cyan-600"
               >
                 View Website
                 <FaGlobe size={25} className="ml-2 text-white" />
               </Link>
               <Link
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                to={"https://github.com/Zebishah/prodigy-wd-weatherapp.git"}
+                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white transition-all duration-300 ease-in-out bg-blue-700 rounded-lg hover:bg-cyan-200 focus:ring-4 focus:outline-none focus:ring-blue-300 font-radios dark:bg-cyan-500 dark:hover:bg-cyan-600"
               >
                 View Github
                 <FaGithub size={25} className="ml-2 text-white" />

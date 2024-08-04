@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
+import cvPdf from "../img/Zohaib Resume (1).pdf";
 import {
   FaCode,
   FaCss3,
   FaHtml5,
-  FaLaptopCode,
   FaLinkedin,
   FaNodeJs,
+  FaWhatsapp,
 } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { IoLogoWhatsapp } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa6";
 import image from "../images/imgonline-com-ua-ReplaceColor-BgXRJRCAzCepcb-removebg-preview (2).png";
 import { FaReact } from "react-icons/fa";
@@ -16,14 +16,15 @@ import backgroundImage from "../images/27230.jpg";
 const About = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center w-full h-auto p-12 bg-center bg-cover"
+      className="flex flex-col items-center justify-center w-full h-auto p-12 bg-center bg-cover lg:mt-0"
+      id="about"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="flex flex-row mx-auto items-center justify-center w-[100%]">
         <div className="md:flex hidden items-center justify-center p-3 md:w-[40%] w-[80%]">
           <img src={image} alt="profile pic" className="h-[100%] w-[80%]" />
         </div>
-        <div className="flex flex-col items-start justify-center gap-y-3 md:w-[40%] w-[80%]">
+        <div className="flex flex-col items-start justify-center gap-y-3 md:w-[40%] w-[95%]">
           <h1 className="text-6xl font-bold text-[#00e1ff] font-radios">
             About <span className="text-white">Me</span>{" "}
           </h1>
@@ -41,37 +42,48 @@ const About = () => {
             skills and enthusiasm to an innovative tech team
           </p>
           <div className="flex items-center justify-center mt-2 gap-x-3">
-            <Link>
-              <div className="p-2 border-2 border-blues text-[#00e1ff] hover:text-light-black rounded-full hover:bg-[#00e1ff] hover:-translate-y-1 hover:shadow-md hover:shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out">
+            <Link to={"linkedin.com/in/syed-zohaib-haider-390530228"}>
+              <div className="p-2 border-2 border-[#00e1ff] text-[#00e1ff] hover:text-light-black rounded-full hover:bg-[#00e1ff] hover:-translate-y-1 hover:shadow-md hover:shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out">
                 <FaLinkedin size={20} className="hover:text-light-black" />
               </div>
             </Link>
 
-            <Link>
-              <div className="p-2 border-2 border-blues text-[#00e1ff] hover:text-light-black rounded-full hover:bg-[#00e1ff] hover:-translate-y-1 hover:shadow-md hover:shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out">
+            <Link to={"github.com/zebishah"}>
+              <div className="p-2 border-2 border-[#00e1ff] text-[#00e1ff] hover:text-light-black rounded-full hover:bg-[#00e1ff] hover:-translate-y-1 hover:shadow-md hover:shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out">
                 <FaGithub size={20} className="hover:text-light-black" />
               </div>
             </Link>
 
-            <Link>
-              <div className="p-2 border-2 border-blues text-[#00e1ff] hover:text-light-black rounded-full hover:bg-[#00e1ff] hover:-translate-y-1 hover:shadow-md hover:shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out">
-                <IoLogoWhatsapp size={20} className="hover:text-light-black" />
+            <Link to={"https://wa.me/923105904269"}>
+              <div className="p-2 border-2 border-[#00e1ff] text-[#00e1ff] hover:text-light-black rounded-full hover:bg-[#00e1ff] hover:-translate-y-1 hover:shadow-md hover:shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out">
+                <FaWhatsapp size={20} className="hover:text-light-black" />
               </div>
             </Link>
 
-            <Link>
-              <div className="p-2 border-2 border-blues text-[#00e1ff] hover:text-light-black rounded-full hover:bg-[#00e1ff] hover:-translate-y-1 hover:shadow-md hover:shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out">
+            <Link
+              to={
+                "https://www.instagram.com/eren_yeagerr83?igsh=MWoxeWk5eHF1bmFhaw=="
+              }
+            >
+              <div className="p-2 border-2 border-[#00e1ff] text-[#00e1ff] hover:text-light-black rounded-full hover:bg-[#00e1ff] hover:-translate-y-1 hover:shadow-md hover:shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out">
                 <FaInstagram size={20} className="hover:text-light-black" />
               </div>
             </Link>
           </div>
+
           <div className="flex items-start justify-center mt-3 gap-x-5">
-            <button className="bg-[#00e1ff] text-black font-radios p-3 rounded-3xl shadow-lg shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out">
-              Download Cv
-            </button>
-            <button className="border-2 border-[#00e1ff] text-[#00e1ff] hover:text-fade-black font-radios p-3 rounded-3xl hover:shadow-md hover:shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out hover:bg-[#00e1ff]">
-              Contact Me
-            </button>
+            <a
+              href={cvPdf}
+              download="Zohaib Resume (1).pdf" // This will be the name of the downloaded file
+              className="bg-[#00e1ff] text-black font-radios p-3 rounded-3xl shadow-lg shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out"
+            >
+              Download CV
+            </a>
+            <Link to={"contact"}>
+              <button className="border-2 border-[#00e1ff] text-[#00e1ff] hover:text-fade-black font-radios p-3 rounded-3xl hover:shadow-md hover:shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out hover:bg-[#00e1ff]">
+                Contact Me
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -97,7 +109,7 @@ const About = () => {
             size={60}
           />
           <h1 className="z-10 text-4xl font-bold text-white group-hover:text-black">
-            10+
+            5
           </h1>
           <h3 className="z-10 text-xl text-blues font-radios group-hover:text-black">
             Back-end Projects
@@ -133,7 +145,7 @@ const About = () => {
           />
 
           <h1 className="z-10 text-4xl font-bold text-white group-hover:text-black">
-            10+
+            20+
           </h1>
           <h3 className="z-10 text-xl text-blues font-radios group-hover:text-black">
             Complete Projects

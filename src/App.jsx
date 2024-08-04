@@ -2,7 +2,8 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TitlePage from "./modules/TitlePage";
 import Navbar from "./modules/Navbar";
-import backgroundImage from "./images/3d-dark-grunge-display-background-with-smoky-atmosphere.jpg";
+
+import ContactUs from "./modules/ContactUs";
 function App() {
   return (
     <div
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<TitlePage />} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </Router>
     </div>

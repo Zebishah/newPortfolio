@@ -1,16 +1,17 @@
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { FiCode, FiFigma } from "react-icons/fi";
-import backgroundImage from "../images/3d-dark-grunge-display-background-with-smoky-atmosphere.jpg";
+import backgroundImage from "../images/dark-plain-gray-wall-product-background.jpg";
 const Services = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center w-full h-screen bg-center bg-cover gap-y-20"
+      className="flex flex-col items-center justify-center w-full h-auto pt-10 pb-10 bg-center bg-cover xl:h-screen gap-y-20"
+      id="services"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <h1 className="text-6xl font-semibold text-blues font-radios">
+      <h1 className="text-3xl font-semibold lg:text-6xl text-blues font-radios">
         <span className="text-white ">My</span> Services
       </h1>
-      <div className="flex flex-col xl:flex-row gap-x-14 w-[100%] flex-wrap gap-y-4 justify-center items-center">
+      <div className="flex flex-col xl:flex-row gap-x-14 w-[100%] flex-wrap gap-y-4 justify-center items-center ">
         <div className="flex flex-col items-center justify-center p-9 bg-light-black shadow-blues shadow-lg rounded-2xl gap-y-3 w-[80%] xl:w-[25%] hover:scale-110 group hover:shadow-lg hover:shadow-blues transition-all duration-500 ease-in-out cursor-pointer ">
           <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-500 ease-out rounded bg-blues -z-1 group-hover:w-full group-hover:h-full"></span>
           <FaReact

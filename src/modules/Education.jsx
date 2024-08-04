@@ -13,7 +13,7 @@ const Education = () => {
 
       <div className="items-center justify-center hidden w-full mx-auto ml-24 xl:h-screen xl:flex gap-x-4 md:ml-0">
         {/* after:content-[' '] after:w-3 after:h-full after:bg-green-400 */}
-        <div className="flex flex-col items-center justify-start gap-y-14 w-[85%] md:w-[30%] h-full ">
+        <div className="flex flex-col items-center justify-start gap-y-14 w-[95%] md:w-[30%] h-full ">
           <div className="flex flex-col items-end justify-end mt-1.5 gap-y-4">
             <div className="flex items-center justify-center translate-x-[1.85rem] gap-x-4">
               <p className="text-blues font-radios">2014</p>
@@ -168,7 +168,7 @@ const Education = () => {
 
       <div className="flex items-center justify-center w-full mx-auto xl:h-screen xl:hidden gap-x-4 md:ml-0">
         {/* after:content-[' '] after:w-3 after:h-full after:bg-green-400 */}
-        <div className="flex flex-col items-center justify-start gap-y-14 w-[85%] h-full ">
+        <div className="flex flex-col items-center justify-start gap-y-14 w-[98%] h-full ">
           <div className="flex flex-col items-end justify-end mt-1.5 gap-y-4">
             <div className="flex items-center justify-center translate-x-[1.85rem] gap-x-4">
               <p className="text-blues font-radios">2014</p>

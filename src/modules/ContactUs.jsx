@@ -1,12 +1,39 @@
+import { useRef, useState } from "react";
 import backgroundImage from "../images/27230.jpg";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+
 const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_uy6ph07", // Replace with your EmailJS service ID
+        "template_agvukwm", // Replace with your EmailJS template ID
+        form.current,
+        "xbyll0irew58RPUxg" // Replace with your EmailJS user ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Your Message was successfully sent!");
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Failed to send message, please try again.");
+        }
+      );
+  };
   return (
     <div
       className="flex flex-col items-center justify-center w-full h-full p-0 mx-auto space-y-16 bg-center bg-cover md:p-16 "
       id="contact"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      <h1 className="text-3xl lg:text-6xl font-semibold text-[#00e1ff] font-radios mt-12">
+      <h1 className="text-3xl lg:text-6xl font-semibold text-[#00e1ff] font-radios md:mt-12 mt-16">
         <span className="text-white ">Contact</span> Me
       </h1>
       <section className="py-24">
@@ -61,7 +88,7 @@ const ContactUs = () => {
                           />
                         </svg>
                         <h5 className="ml-5 text-base font-normal leading-6 text-black">
-                          Pagedone1234@gmail.com
+                          zebihaider123@gmail.com
                         </h5>
                       </a>
                       <a href="javascript:;" className="flex items-center">
@@ -84,7 +111,7 @@ const ContactUs = () => {
                           />
                         </svg>
                         <h5 className="ml-5 text-base font-normal leading-6 text-black">
-                          654 Sycamore Avenue, Meadowville, WA 76543
+                          House no 540 Sector 22F Pof WahCantt
                         </h5>
                       </a>
                     </div>
@@ -96,29 +123,37 @@ const ContactUs = () => {
               <h2 className="text-4xl font-semibold leading-10 text-cyan-400 font-manrope mb-11">
                 Send Us A Message
               </h2>
-              <input
-                type="text"
-                className="w-full h-12 p-5 mb-10 text-lg font-normal leading-7 text-white placeholder-white bg-transparent border rounded-full shadow-sm border-cyan-300 focus:outline-none"
-                placeholder="Name"
-              />
-              <input
-                type="text"
-                className="w-full h-12 p-5 mb-10 text-lg font-normal leading-7 text-white placeholder-white bg-transparent border rounded-full shadow-sm border-cyan-300 focus:outline-none"
-                placeholder="Email"
-              />
-              <input
-                type="text"
-                className="w-full h-12 p-5 mb-10 text-lg font-normal leading-7 text-white placeholder-white bg-transparent border rounded-full shadow-sm border-cyan-300 focus:outline-none"
-                placeholder="Phone"
-              />
-
-              <textarea
-                className="w-full h-48 p-2 p-5 mb-10 text-lg font-normal leading-7 text-white placeholder-white bg-transparent border rounded-lg shadow-sm resize-none border-cyan-300 focus:outline-none"
-                placeholder="Message"
-              ></textarea>
-              <button className="w-full h-12 text-base font-semibold leading-6 text-white transition-all duration-700 rounded-full shadow-sm bg-cyan-400 hover:bg-indigo-800">
-                Send
-              </button>
+              <form ref={form} onSubmit={sendEmail}>
+                <input
+                  type="text"
+                  name="name"
+                  className="w-full h-12 p-5 mb-10 text-lg font-normal leading-7 text-white placeholder-white bg-transparent border rounded-full shadow-sm border-cyan-300 focus:outline-none"
+                  placeholder="Name"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  className="w-full h-12 p-5 mb-10 text-lg font-normal leading-7 text-white placeholder-white bg-transparent border rounded-full shadow-sm border-cyan-300 focus:outline-none"
+                  placeholder="Email"
+                />
+                <input
+                  type="text"
+                  name="phone"
+                  className="w-full h-12 p-5 mb-10 text-lg font-normal leading-7 text-white placeholder-white bg-transparent border rounded-full shadow-sm border-cyan-300 focus:outline-none"
+                  placeholder="Phone"
+                />
+                <textarea
+                  name="message"
+                  className="w-full h-48 p-2 p-5 mb-10 text-lg font-normal leading-7 text-white placeholder-white bg-transparent border rounded-lg shadow-sm resize-none border-cyan-300 focus:outline-none"
+                  placeholder="Message"
+                ></textarea>
+                <button
+                  type="submit"
+                  className="w-full h-12 text-base font-semibold leading-6 text-white transition-all duration-700 rounded-full shadow-sm bg-cyan-400 hover:bg-indigo-800"
+                >
+                  Send
+                </button>
+              </form>
             </div>
           </div>
         </div>

@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <>
       <div className="flex flex-col " id="home">
-        <div className="flex flex-row justify-between items-center h-[10vh] bg-light-black px-10">
+        <div className="flex flex-row justify-between items-center h-[10vh] bg-light-black px-10 fixed top-0 left-0 right-0 z-10 ">
           <div className="flex items-center justify-center py-2 pr-6 gap-x-2">
             <FaCode size={40} className="text-cyan-400" />
             <h1 className="text-3xl text-white font-radios">

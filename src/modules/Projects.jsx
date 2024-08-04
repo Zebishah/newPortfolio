@@ -12,7 +12,7 @@ import { FaGithub } from "react-icons/fa";
 const Projects = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center w-full h-full p-0 mx-auto space-y-16 bg-center bg-cover md:p-16"
+      className="flex flex-col items-center justify-center w-full h-full p-0 py-10 mx-auto space-y-16 bg-center bg-cover md:p-16"
       id="projects"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >

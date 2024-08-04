@@ -3,7 +3,7 @@ import backgroundImage from "../images/27230.jpg";
 const Experience = () => {
   return (
     <div
-      className="flex flex-col items-center justify-center w-full h-full p-16 mx-auto space-y-16 bg-center bg-cover"
+      className="flex flex-col items-center justify-center w-full h-full py-16 mx-auto space-y-16 bg-center bg-cover "
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <h1 className="text-3xl font-semibold lg:text-6xl text-blues font-radios">

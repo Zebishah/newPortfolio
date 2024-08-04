@@ -17,7 +17,7 @@ import ContactUs from "./ContactUs";
 import Footer from "./Footer";
 const TitlePage = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-y-20">
+    <div className="flex flex-col items-center justify-center mt-24 md:mt-16 gap-y-20">
       <div
         className="flex flex-col xl:flex-row mx-auto items-center xl:h-screen justify-center w-[100%] gap-y-3 border-none gap-x-10 bg-center bg-cover"
         style={{ backgroundImage: `url(${backgroundImage})` }}

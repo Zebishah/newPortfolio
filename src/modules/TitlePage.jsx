@@ -53,13 +53,15 @@ const TitlePage = () => {
             skills and enthusiasm to an innovative tech team
           </p>
           <div className="flex items-center justify-center mt-2 gap-x-3">
-            <Link to={"linkedin.com/in/syed-zohaib-haider-390530228"}>
+            <Link
+              to={"https://www.linkedin.com/in/syed-zohaib-haider-390530228/"}
+            >
               <div className="p-2 border-2 border-[#00e1ff] text-[#00e1ff] hover:text-light-black rounded-full hover:bg-[#00e1ff] hover:-translate-y-1 hover:shadow-md hover:shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out">
                 <FaLinkedin size={20} className="hover:text-light-black" />
               </div>
             </Link>
 
-            <Link to={"github.com/zebishah"}>
+            <Link to={"https://github.com/zebishah"}>
               <div className="p-2 border-2 border-[#00e1ff] text-[#00e1ff] hover:text-light-black rounded-full hover:bg-[#00e1ff] hover:-translate-y-1 hover:shadow-md hover:shadow-[#00e1ff] hover:scale-110 transition-all duration-300 ease-in-out">
                 <FaGithub size={20} className="hover:text-light-black" />
               </div>

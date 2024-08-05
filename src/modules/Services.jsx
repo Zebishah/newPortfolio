@@ -12,7 +12,7 @@ const Services = () => {
         <span className="text-white ">My</span> Services
       </h1>
       <div className="flex flex-col xl:flex-row gap-x-14 w-[100%] flex-wrap gap-y-4 justify-center items-center ">
-        <div className="flex flex-col items-center justify-center p-9 bg-light-black shadow-blues shadow-lg rounded-2xl gap-y-3 w-[80%] xl:w-[25%] hover:scale-110 group hover:shadow-lg hover:shadow-blues transition-all duration-500 ease-in-out cursor-pointer ">
+        <div className="flex flex-col items-center justify-center p-5 md:p-9 bg-light-black shadow-blues shadow-lg rounded-2xl gap-y-3 w-[80%] xl:w-[25%] hover:scale-110 group hover:shadow-lg hover:shadow-blues transition-all duration-500 ease-in-out cursor-pointer ">
           <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-500 ease-out rounded bg-blues -z-1 group-hover:w-full group-hover:h-full"></span>
           <FaReact
             className="z-10 text-blues group-hover:text-fade-black"
@@ -31,7 +31,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center p-9 bg-light-black shadow-blues shadow-lg rounded-2xl gap-y-3 w-[80%] xl:w-[25%] hover:scale-110 group hover:shadow-lg hover:shadow-blues transition-all duration-500 ease-in-out cursor-pointer">
+        <div className="flex flex-col items-center justify-center p-5 md:p-9 bg-light-black shadow-blues shadow-lg rounded-2xl gap-y-3 w-[80%] xl:w-[25%] hover:scale-110 group hover:shadow-lg hover:shadow-blues transition-all duration-500 ease-in-out cursor-pointer">
           <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-500 ease-out rounded bg-blues -z-1 group-hover:w-full group-hover:h-full"></span>
           <FaNodeJs
             className="z-10 text-blues group-hover:text-fade-black"
@@ -49,7 +49,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-center justify-center p-9 bg-light-black shadow-blues shadow-lg rounded-2xl gap-y-3 w-[80%] xl:w-[25%] hover:scale-110 group hover:shadow-lg hover:shadow-blues transition-all duration-500 ease-in-out cursor-pointer">
+        <div className="flex flex-col items-center justify-center p-5 md:p-9 bg-light-black shadow-blues shadow-lg rounded-2xl gap-y-3 w-[80%] xl:w-[25%] hover:scale-110 group hover:shadow-lg hover:shadow-blues transition-all duration-500 ease-in-out cursor-pointer">
           <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-500 ease-out rounded bg-blues -z-1 group-hover:w-full group-hover:h-full"></span>
           <FiFigma
             className="z-10 text-blues group-hover:text-fade-black"

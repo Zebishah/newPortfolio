@@ -13,7 +13,7 @@ const Education = () => {
 
       <div className="items-center justify-center hidden w-full mx-auto ml-24 xl:h-screen xl:flex gap-x-4 md:ml-0">
         {/* after:content-[' '] after:w-3 after:h-full after:bg-green-400 */}
-        <div className="flex flex-col items-center justify-start gap-y-14 w-[95%] md:w-[30%] h-full ">
+        <div className="flex flex-col items-center justify-start gap-y-14 w-[99%] md:w-[30%] h-full ">
           <div className="flex flex-col items-end justify-end mt-1.5 gap-y-4">
             <div className="flex items-center justify-center translate-x-[1.85rem] gap-x-4">
               <p className="text-blues font-radios">2014</p>
@@ -21,11 +21,12 @@ const Education = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm text-center md:text-lg">
                 FG.Model High School,Wahcantt
               </h3>
               <p className="text-[#00e1ff] font-radios">
-                Marks-Grade : <span className="text-white">934/1100,85%</span>
+                Marks-Grade :{" "}
+                <span className="text-sm text-white ">934/1100,85%</span>
               </p>
               <p className="text-sm text-center text-white font-radios">
                 "Completed Matriculation with a strong foundation in core
@@ -42,11 +43,12 @@ const Education = () => {
               <FaCircle className="text-white " size={18} />
             </div>
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 md:ml-4 ml-0 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm text-center md:text-lg">
                 F.G Degree College for Men,Wah Cantt
               </h3>
               <p className="text-[#00e1ff] font-radios">
-                Marks-Grade : <span className="text-white">916/1100 , 83%</span>
+                Marks-Grade :{" "}
+                <span className="text-sm text-white ">916/1100 , 83%</span>
               </p>
               <p className="text-sm text-center text-white font-radios">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -62,11 +64,12 @@ const Education = () => {
               <FaCircle className="text-white " size={18} />
             </div>
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm text-center md:text-lg">
                 International Islamic University, Islamabad
               </h3>
               <p className="text-[#00e1ff] font-radios">
-                Marks-Grade : <span className="text-white">3.67/4.00 Cgpa</span>
+                Marks-Grade :{" "}
+                <span className="text-sm text-white ">3.67/4.00 Cgpa</span>
               </p>
               <p className="text-sm text-center text-white font-radios">
                 "I successfully completed my bachelors studies in software
@@ -83,11 +86,12 @@ const Education = () => {
               <FaCircle className="text-white " size={18} />
             </div>
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 md:ml-4 ml-0 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm text-center md:text-lg">
                 Model High School
               </h3>
               <p className="text-[#00e1ff] font-radios">
-                Marks-Grade : <span className="text-white">934/1100,85%</span>
+                Marks-Grade :{" "}
+                <span className="text-sm text-white ">934/1100,85%</span>
               </p>
               <p className="text-sm text-center text-white font-radios">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -108,11 +112,12 @@ const Education = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm text-center md:text-lg">
                 Model High School
               </h3>
               <p className="text-[#00e1ff] font-radios">
-                Marks-Grade : <span className="text-white">934/1100,85%</span>
+                Marks-Grade :{" "}
+                <span className="text-sm text-white ">934/1100,85%</span>
               </p>
               <p className="text-sm text-center text-white font-radios">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -128,11 +133,12 @@ const Education = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm text-center md:text-lg">
                 F.G Degree College for Men,Wah Cantt
               </h3>
               <p className="text-[#00e1ff] font-radios">
-                Marks-Grade : <span className="text-white">916/1100,83%</span>
+                Marks-Grade :{" "}
+                <span className="text-sm text-white ">916/1100,83%</span>
               </p>
               <p className="text-sm text-center text-white font-radios">
                 "I successfully completed my Intermediate studies, focusing on
@@ -150,11 +156,12 @@ const Education = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm text-center md:text-lg">
                 Model High School
               </h3>
               <p className="text-[#00e1ff] font-radios">
-                Marks-Grade : <span className="text-white">934/1100,85%</span>
+                Marks-Grade :{" "}
+                <span className="text-sm text-white ">934/1100,85%</span>
               </p>
               <p className="text-sm text-center text-white font-radios">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -176,11 +183,12 @@ const Education = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm text-center md:text-lg">
                 FG.Model High School,Wahcantt
               </h3>
               <p className="text-[#00e1ff] font-radios">
-                Marks-Grade : <span className="text-white">934/1100,85%</span>
+                Marks-Grade :{" "}
+                <span className="text-sm text-white ">934/1100,85%</span>
               </p>
               <p className="text-sm text-center text-white font-radios">
                 "Completed Matriculation with a strong foundation in core
@@ -197,11 +205,12 @@ const Education = () => {
               <FaCircle className="text-white " size={18} />
             </div>
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 md:ml-4 ml-0 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm text-center md:text-lg">
                 F.G Degree College for Men,Wah Cantt
               </h3>
               <p className="text-[#00e1ff] font-radios">
-                Marks-Grade : <span className="text-white">916/1100 , 83%</span>
+                Marks-Grade :{" "}
+                <span className="text-sm text-white ">916/1100 , 83%</span>
               </p>
               <p className="text-sm text-center text-white font-radios">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -217,11 +226,12 @@ const Education = () => {
               <FaCircle className="text-white " size={18} />
             </div>
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm text-center md:text-lg">
                 International Islamic University, Islamabad
               </h3>
               <p className="text-[#00e1ff] font-radios">
-                Marks-Grade : <span className="text-white">3.67/4.00 Cgpa</span>
+                Marks-Grade :{" "}
+                <span className="text-sm text-white ">3.67/4.00 Cgpa</span>
               </p>
               <p className="text-sm text-center text-white font-radios">
                 "I successfully completed my bachelors studies in software

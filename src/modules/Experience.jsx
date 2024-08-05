@@ -20,7 +20,7 @@ const Experience = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm md:text-lg">
                 Remote Frontend Developer Internship
               </h3>
               <p className="text-[#00e1ff] font-radios">
@@ -41,7 +41,7 @@ const Experience = () => {
               <FaCircle className="text-white " size={18} />
             </div>
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 md:ml-4 ml-0 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm md:text-lg">
                 Model High School
               </h3>
               <p className="text-[#00e1ff] font-radios">
@@ -61,7 +61,7 @@ const Experience = () => {
               <FaCircle className="text-white " size={18} />
             </div>
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm md:text-lg">
                 Remote web development(Frontend Dev)
               </h3>
               <p className="text-[#00e1ff] font-radios">
@@ -81,7 +81,7 @@ const Experience = () => {
               <FaCircle className="text-white " size={18} />
             </div>
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 md:ml-4 ml-0 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm md:text-lg">
                 Model High School
               </h3>
               <p className="text-[#00e1ff] font-radios">
@@ -106,7 +106,7 @@ const Experience = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm md:text-lg">
                 Model High School
               </h3>
               <p className="text-[#00e1ff] font-radios">
@@ -126,7 +126,7 @@ const Experience = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm md:text-lg">
                 Remote Web development Internship
               </h3>
               <p className="text-[#00e1ff] font-radios">
@@ -148,7 +148,7 @@ const Experience = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm md:text-lg">
                 Model High School
               </h3>
               <p className="text-[#00e1ff] font-radios">
@@ -168,7 +168,7 @@ const Experience = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm md:text-lg">
                 Academics projects
               </h3>
               <p className="text-[#00e1ff] font-radios">
@@ -195,7 +195,7 @@ const Experience = () => {
             </div>
 
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm md:text-lg">
                 Remote Frontend Developer Internship
               </h3>
               <p className="text-[#00e1ff] font-radios">
@@ -216,7 +216,7 @@ const Experience = () => {
               <FaCircle className="text-white " size={18} />
             </div>
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm md:text-lg">
                 Remote Web development Internship
               </h3>
               <p className="text-[#00e1ff] font-radios">
@@ -238,7 +238,7 @@ const Experience = () => {
               <FaCircle className="text-white " size={18} />
             </div>
             <div className="flex flex-col items-center justify-center gap-y-2 bg-light-black shadow-lg shadow-[#00e1ff] rounded-3xl p-4 hover:scale-110 hover:shadow-lg hover:shadow-blues transition-all ease-in-out duration-500">
-              <h3 className="text-[#00e1ff] font-radios font-bold text-lg">
+              <h3 className="text-[#00e1ff] font-radios font-bold text-sm md:text-lg">
                 Remote web development(Frontend Dev)
               </h3>
               <p className="text-[#00e1ff] font-radios">

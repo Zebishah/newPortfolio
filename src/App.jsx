@@ -5,10 +5,12 @@ import Navbar from "./modules/Navbar";
 import "react-toastify/dist/ReactToastify.css";
 import ContactUs from "./modules/ContactUs";
 import { ToastContainer } from "react-toastify";
+import backgroundImage from "./images/27230.jpg";
 function App() {
   return (
     <div
       className="w-full h-full bg-[#0e0d0d] "
+      style={{ backgroundImage: `url(${backgroundImage})` }}
       // style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <Router>

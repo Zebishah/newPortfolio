@@ -28,7 +28,7 @@ const Projects = () => {
               className="w-[100%] lg:w-[90%]object-cover h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
             />
           </Link>
-          <div className="w-[80%]">
+          <div className="md:w-[80%] w-[95%]">
             <Link href="#">
               <h5 className="mb-2 text-2xl font-bold text-cyan-400 font-radios">
                 Travelo Website (Tours & Booking Platform)
@@ -83,7 +83,7 @@ const Projects = () => {
               className="w-[100%] lg:w-[90%]w-[100%] lg:w-[90%] object-cover h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
             />
           </Link>
-          <div className="w-[80%]">
+          <div className="md:w-[80%] w-[95%]">
             <Link href="#">
               <h5 className="mb-2 text-2xl font-bold text-cyan-400 font-radios">
                 Epic Explorer (Tours Travel & Booking Website)
@@ -154,7 +154,7 @@ const Projects = () => {
               className="w-[100%] lg:w-[90%]w-[100%] lg:w-[90%] object-cover h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
             />
           </Link>
-          <div className="w-[80%]">
+          <div className="md:w-[80%] w-[95%]">
             <Link href="#">
               <h5 className="mb-2 text-2xl font-bold text-cyan-400 font-radios">
                 Notia Website (User Notes Manager)
@@ -226,7 +226,7 @@ const Projects = () => {
               className="w-[100%] lg:w-[90%]w-[100%] lg:w-[90%] object-cover h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
             />
           </Link>
-          <div className="w-[80%]">
+          <div className="md:w-[80%] w-[95%]">
             <Link href="#">
               <h5 className="mb-2 text-2xl font-bold text-cyan-400 font-radios">
                 Admin Dashboard (Admin Panel Website)
@@ -294,7 +294,7 @@ const Projects = () => {
               className="w-[100%] lg:w-[90%]w-[100%] lg:w-[90%] object-cover h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
             />
           </Link>
-          <div className="w-[80%]">
+          <div className="md:w-[80%] w-[95%]">
             <Link href="#">
               <h5 className="mb-2 text-2xl font-bold text-cyan-400 font-radios">
                 Ranchers Website (Food order platform)
@@ -353,7 +353,7 @@ const Projects = () => {
               className="w-[100%] lg:w-[90%]w-[100%] lg:w-[90%] object-cover h-48 rounded-xl border-2 border-white shadow-lg shadow-cyan-400"
             />
           </Link>
-          <div className="w-[80%]">
+          <div className="md:w-[80%] w-[95%]">
             <Link href="#">
               <h5 className="mb-2 text-2xl font-bold text-cyan-400 font-radios">
                 Weather Website (Global weather-Forecast)

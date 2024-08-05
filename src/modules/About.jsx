@@ -28,7 +28,7 @@ const About = () => {
           <h1 className="text-6xl font-bold text-[#00e1ff] font-radios">
             About <span className="text-white">Me</span>{" "}
           </h1>
-          <h3 className="text-4xl text-white font-radios">
+          <h3 className="text-3xl text-white smd:text-4xl font-radios">
             I&apos;m a{" "}
             <span className="text-[#00e1ff] font-sans font-bold">
               Web Developer

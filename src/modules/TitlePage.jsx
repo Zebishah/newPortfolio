@@ -23,10 +23,10 @@ const TitlePage = () => {
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="flex flex-col items-start justify-center gap-y-3 w-[90%] xl:w-[40%] order-2 xl:order-1">
-          <h1 className="text-6xl font-bold text-white font-radios">
-            Hi, It's <span className="text-[#00e1ff]">Eren Yeager</span>{" "}
+          <h1 className="text-4xl font-bold text-white smd:text-6xl font-radios">
+            Hi, It's <span className="text-[#00e1ff]">Zohaib Haider</span>{" "}
           </h1>
-          <h3 className="flex text-4xl text-white gap-x-3 font-radios">
+          <h3 className="flex text-2xl text-white smd:text-4xl gap-x-2 md:gap-x-3 font-radios">
             I&apos;m a{"  "}
             <span
               className={`flex text-[#00e1ff] font-poppins font-bold transition-all duration-300 ease-in-out `}
